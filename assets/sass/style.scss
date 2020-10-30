@@ -25,30 +25,44 @@ $sm: 350px;
   }
 }
 
+body{
+  background: #031f59;
+}
+
 .head_wrap{
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 0;
-  background: #A23131;
+  background: #092544;
 }
 .head_ttl{
   text-align: center;
   p{
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     display: inline-block;
-    text-shadow: 0px 2px 5px #000;
+    text-shadow: 0px 10px 5px #000;
     border-bottom: 2px solid #fff;
     border-top: 2px solid #fff;
     padding: .5em 0;
     @include sp{
-      font-size: 2.4rem;
+      font-size: 2rem;
+    }
+    span{
+      font-size: 6rem;
+      margin-right: 10px;
+      @include md{
+        font-size: 5rem;
+      }
+      @include sp{
+        font-size: 4rem;
+      }
     }
   }
 }
 .head_summary{
-  margin-top: 30px;
+  margin-top: 50px;
   p{
     text-align: center;
     line-height: 2;
@@ -66,13 +80,15 @@ $sm: 350px;
     text-align: center;
     a{
       text-align: center;
-      font-size: 2rem;
+      font-size: 3rem;
       color: #fff;
-      background: #792121;
+      background: #279b79;
       font-weight: 700;
-      padding: 20px 50px;
+      padding: .7em 3em;
       border-radius: 5px;
-      border: 1px solid #fff;
+      @include sp{
+        font-size: 2rem;
+      }
       &:hover{
         transition: .5s;
         opacity: 0.5;
@@ -85,15 +101,15 @@ $sm: 350px;
 .content_wrap{
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .common_head{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   p{
     position: relative;
-    font-size: 3rem;
-    background-color: #1E3447;
+    font-size: 4rem;
+    background-color: #078cb4;
     font-weight: 700;
     color: #fff;
     padding: 30px 0;
@@ -124,19 +140,19 @@ $sm: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   @include md{
     padding: 20px 0;
   }
   p{
     text-align: center;
     font-size: 2rem;
-    color: #792121;
     font-weight: 700;
+    color: #000;
     @include sp{
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
     &::before{
-      color: #792121;
       content: "\f0c8";
       font-family: "Font Awesome 5 Free";
       margin-right: 10px;
@@ -155,6 +171,7 @@ $sm: 350px;
     font-size: 1.8rem;
     padding: 1.5em;
     font-weight: 700;
+    color: #fff;
     @include sp{
       padding: 1em;
       font-size: 1.6rem;
@@ -164,6 +181,24 @@ $sm: 350px;
 .mt{
   margin-top: 45px;
 }
+.sub_01{
+  border-left: 20px solid #ce5041;
+  p::before{
+    color: #ce5041;
+  }
+}
+.sub_02{
+  border-left: 20px solid #f9be35;
+  p::before{
+    color: #f9be35;
+  }
+}
+.sub_03{
+  border-left: 20px solid #00ac9d;
+  p::before{
+    color: #00ac9d;
+  }
+}
 // インターグループの強み
 .list_txt{
   li{
@@ -172,11 +207,12 @@ $sm: 350px;
     font-weight: 700;
     border: 1px dotted #999999;
     border-radius: 10px;
+    color: #fff;
     @include sp{
       font-size: 1.6rem;
     }
     &::before{
-      color: #792121;
+      color: #f9be35;
       content: "\f00c";
       font-family: "Font Awesome 5 Free";
       margin-right: 10px;
@@ -196,6 +232,8 @@ $sm: 350px;
     font-weight: 700;
     text-align: center;
     line-height: 2;
+    color: #fff;
+    padding: 0 1em;
     @include sp{
       font-size: 1.6rem;
     }
@@ -206,12 +244,15 @@ $sm: 350px;
   text-align: center;
   a{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
-    background: #792121;
+    background: #279b79;
     font-weight: 700;
-    padding: 20px 50px;
+    padding: .7em 3em;
     border-radius: 5px;
+    @include sp{
+      font-size: 2rem;
+    }
     @include sp{
       padding: 20px 40px;
     }
@@ -229,11 +270,12 @@ $sm: 350px;
 footer{
   max-width: 1000px;
   margin: 0 auto;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #FFF;
   p{
     font-size: 1.2rem;
     text-align: center;
     padding: 20px 0;
+    color: #fff;
   }
 }
 

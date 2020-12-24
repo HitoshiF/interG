@@ -33,12 +33,14 @@ $sm: 350px;
 html{
   -webkit-scroll-behavior:smooth;
   scroll-behavior:smooth;
+  overflow: auto;
 }
   
 body{
   background: #015187;
+  box-sizing : border-box;
   overflow-x: hidden;
-  // overflow-y: hidden;
+  overflow-y: hidden;
 }
 .mv{
   width: 100%;
